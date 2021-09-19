@@ -1,0 +1,139 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>luyện tập vòng lặp 1</title>
+</head>
+<body>
+<input type="button" value="open" id="a" onclick="an()">
+
+<script>
+    // bài 1
+    // for (let i = 1; i <100 ; i++) {
+    //     console.log(i + '<br>')
+    // }
+    // alert('đã đếm xong')
+    // bài 2
+
+    // bài 3:
+    // let a = 0;
+    // let b = 1;
+    // let count = +prompt("Nhập vào số lượng số cần hiển thị: ")
+    // document.write("Những số cần tìm là: ")
+    // for (let i = 0; i < count; i++) {
+    //     document.write(b + ", ")
+    //     let c = a + b
+    //     a = b
+    //     b = c
+    // }
+    // bài 4
+    // let a = 0;
+    // let b = 1;
+    // let count = 0
+    // while (count < 20 ){
+    //     if (b % 5 === 0){
+    //         document.write(b + '<br>')
+    //         count ++
+    //     }
+    //     let c = a + b
+    //     a = b
+    //     b = c
+    // }
+    // bài 5
+    // function an() {
+    //     let a = parseInt(prompt('nhập số độ'))
+    //     let b = 20
+    //     let c = 100
+    //     while(true){
+    //         if (a > b && a < c ){
+    //             alert('ok ổn')
+    //             break
+    //         }
+    //         if (a < b){
+    //             alert('không ổn tăng lên nào')
+    //             break
+    //         }
+    //         if (a > 100)
+    //             alert('quá nguy hiểm giảm xuống')
+    //         break
+    //     }
+    // }
+    // function displayFibonacci() {
+    //     let N = +prompt("Nhập vào số lượng");
+    //
+    //     let a = 1;
+    //     let b = 1;
+    //     let c = a + b;
+    //     let count = 2;
+    //     let sum = c;
+    //     document.write(a + ',' + b);
+    //
+    //     while (count < N) {
+    //         c = a + b;
+    //         a = b;
+    //         b = c;
+    //
+    //         sum += c;
+    //         document.write(','+c);
+    //         count++;
+    //     }
+    //
+    //     document.write("<br> Tổng các số Fibonacci: " + sum);
+    // }
+    // displayFibonacci()
+    // bài 6:
+    // function soTuNhien() {
+    //     let N = parseInt(prompt('nhâp một số'))
+    //     let a = 7;
+    //     let count = 0;
+    //     let sum = 0;
+    //     while (count < N){
+    //       if (a % 7 === 0 ){
+    //           sum += a
+    //           document.write( a +' số chia hết cho 7' + '<br>')
+    //           count++
+    //       }
+    //       a++
+    //     }
+    //     document.write('tổng' + sum)
+    // }
+    // soTuNhien()
+    // bài 7
+    // function FizzBuzz() {
+    //     for (let i = 1; i <=  100 ; i++) {
+    //         if (i % 3 === 0 && i % 5 === 0 ){
+    //             document.write( 'fizzbuzz ' + i + '<br>')
+    //         }else if ( i % 3 === 0){
+    //             document.write('fizz' + i +'<br>')
+    //         }else if  ( i % 5 === 0){
+    //             document.write('buzz' + i +'<br>')
+    //         }
+    //     }
+    // }
+    //  FizzBuzz()
+    //  bài 8
+    //     let N = 3;
+    //     let count = 0;
+    //     let a = parseInt(prompt('số bé nhất'))
+    //     let b = parseInt(prompt('số lớn nhất'))
+    //     let c = +parseInt(prompt('khoảng số ' + a + 'đến ' + b))
+    //     let d = parseInt(Math.random() * (b - a) + a)
+    //     // console.log(d)
+    //
+    //             if (c != d){
+    //                 for (let i = 1; i <= 3; i++) {
+    //                     alert(' you lose ')
+    //                     c = +parseInt(prompt('khoảng số ' + a + 'đến ' + b))
+    //                 }
+    //                 alert('game over')
+    //             }else{
+    //                 alert('you win')
+    //             }
+    // }
+
+
+</script>
+
+
+</body>
+</html>

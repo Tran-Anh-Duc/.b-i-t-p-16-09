@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>tìm và in ra 20 số nguyên tố</title>
+</head>
+<body>
+
+
+<script>
+    function checkPrime() {
+        //kiểm tra một số  có phải số nguyên tố không
+        //in  ra nhiều số nguyên tố
+        // tính tổng các số  nguyên tố đó
+        let num = parseInt(prompt('nhập một số'));
+        let count = 0;
+        let N = 2;
+        let sum = 0
+        while (count < num) {
+            let flag = true // kĩ thuât đặt cờ
+            if (N < 2) {
+                flag = false;
+                document.write(N + 'không là số nguyên tố');
+            }
+            let i = 2;
+            while (i < N) {
+                if (N % i === 0) {
+                    flag = false;
+                    // document.write(N + "không là số nguyên tố");
+                }
+                i++;
+            }
+            if (flag === true) {
+                document.write(N + 'là số nguyên tố' + '<br>');
+                count++;
+                sum += N
+            }
+            N++
+        }
+        document.write('tổng '+ num + 'số nguyên tố =' + sum);
+    }
+
+    checkPrime();
+
+
+</script>
+
+
+</body>
+</html>
